@@ -1,10 +1,6 @@
-//
-//  Theme.swift
-//  Scrumdinger
-//
-//  Created by anlythree on 2023/9/17.
-//
-
+/*
+ See LICENSE folder for this sample’s licensing information.
+ */
 
 import SwiftUI
 
@@ -34,5 +30,6 @@ enum Theme: String {
     }
     var mainColor: Color {
         Color(rawValue)
+//        Color(.blue)
     }
 }
