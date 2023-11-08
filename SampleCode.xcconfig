@@ -1,0 +1,10 @@
+//
+//  SampleCode.xcconfig
+//  Scrumdinger
+//
+//  Created by anlythree on 2023/9/23.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+SAMPLE_CODE_DISAMBIGUATOR=${DEVELOPMENT_TEAM}

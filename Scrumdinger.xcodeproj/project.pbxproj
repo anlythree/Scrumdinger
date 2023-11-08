@@ -15,7 +15,6 @@
 		DE115FCC2AB7012E003CBF5C /* TrailingIconLabelStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE115FCB2AB7012E003CBF5C /* TrailingIconLabelStyle.swift */; };
 		DE2300332AB1FCB200B70944 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE2300322AB1FCB200B70944 /* Assets.xcassets */; };
 		DE2300362AB1FCB200B70944 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE2300352AB1FCB200B70944 /* Preview Assets.xcassets */; };
-		DEE94B8F2ABF03E000C9C72A /* SampleCode.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = DEE94B8E2ABF03E000C9C72A /* SampleCode.xcconfig */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,7 +27,7 @@
 		DE23002E2AB1FCB100B70944 /* ScrumdingerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrumdingerApp.swift; sourceTree = "<group>"; };
 		DE2300322AB1FCB200B70944 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DE2300352AB1FCB200B70944 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		DEE94B8E2ABF03E000C9C72A /* SampleCode.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = SampleCode.xcconfig; path = Configuration/SampleCode.xcconfig; sourceTree = SOURCE_ROOT; };
+		DEE94B942ABF0BFA00C9C72A /* SampleCode.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = SampleCode.xcconfig; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,9 +83,9 @@
 			isa = PBXGroup;
 			children = (
 				DE23002E2AB1FCB100B70944 /* ScrumdingerApp.swift */,
+				DE2300322AB1FCB200B70944 /* Assets.xcassets */,
 				DE115FC82AB6FB31003CBF5C /* Views */,
 				DE115FC72AB6FB29003CBF5C /* Models */,
-				DE2300322AB1FCB200B70944 /* Assets.xcassets */,
 				DE2300342AB1FCB200B70944 /* Preview Content */,
 			);
 			path = Scrumdinger;
@@ -103,7 +102,7 @@
 		DEE94B8D2ABF03CF00C9C72A /* Configuration */ = {
 			isa = PBXGroup;
 			children = (
-				DEE94B8E2ABF03E000C9C72A /* SampleCode.xcconfig */,
+				DEE94B942ABF0BFA00C9C72A /* SampleCode.xcconfig */,
 			);
 			path = Configuration;
 			sourceTree = "<group>";
@@ -136,7 +135,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1430;
-				LastUpgradeCheck = 1430;
+				LastUpgradeCheck = 1500;
 				TargetAttributes = {
 					DE23002A2AB1FCB100B70944 = {
 						CreatedOnToolsVersion = 14.3.1;
@@ -167,7 +166,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				DE2300362AB1FCB200B70944 /* Preview Assets.xcassets in Resources */,
-				DEE94B8F2ABF03E000C9C72A /* SampleCode.xcconfig in Resources */,
 				DE2300332AB1FCB200B70944 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -227,6 +225,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -287,6 +286,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
