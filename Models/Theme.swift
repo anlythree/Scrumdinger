@@ -28,8 +28,9 @@ enum Theme: String {
         case .indigo, .magenta, .navy, .oxblood, .purple: return .white
         }
     }
+    
     var mainColor: Color {
+        // 这里可以通过一个String类型构造Color对象是因为在Assets文件中的Theme文件下已经定义好了这些颜色的名称
         Color(rawValue)
-//        Color(.blue)
     }
 }

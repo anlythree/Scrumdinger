@@ -27,11 +27,16 @@ struct CardView: View {
         }
         .padding()
         .foregroundColor(scrum.theme.accentColor)
+        .background(scrum.theme.mainColor)
     }
 }
 
+// PreviewProvider 是一种用于生成预览的协议
 struct CardView_Previews: PreviewProvider {
-    static var scrum = DailyScrum.sampleData[0]
+    static var scrum = DailyScrum(title: "Design",
+                                  attendees: ["Cathy", "Daisy", "Simon", "Jonathan"],
+                                  lengthInMinutes: 10,
+                                  theme: .yellow)
     static var previews: some View {
         CardView(scrum: scrum)
             .background(scrum.theme.mainColor)
